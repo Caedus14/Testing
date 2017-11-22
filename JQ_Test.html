@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JQuery Test</title>
+	<style>
+	a.test {
+		font-weight:bold;
+	}
+	</style>
+</head>
+<body>
+    <a href="http://jquery.com/">jQuery</a>
+    <script src="jquery-2.2.2.min.js"></script>
+    <script>
+	window.onload = function() {
+		alert("Welcome to my test page!");
+	};
+    // Your code goes here.
+	$( document ).ready(function() {
+ 
+    $( "a" ).click(function( event ) {
+ 
+        $(this).hide("slow");
+		event.preventDefault();
+    });
+	$("a").addClass("test");
+	// $("a").removeClass("test");"  How to remove a class
+	
+ 
+});
+	
+	
+    </script>
+</body>
+</html>
